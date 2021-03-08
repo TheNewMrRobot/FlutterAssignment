@@ -78,7 +78,6 @@ class _HomePageState extends State<HomePage> {
                       itemBuilder:(context,index){
                         if (prod.connectionState == ConnectionState.none &&
                             prod.hasData == null) {
-                          //print('project snapshot data is: ${projectSnap.data}');
                           return Container();
                         }
                         return Padding(

@@ -12,7 +12,6 @@ Future<http.Response> sendOtp(String phoneNumber)async{
   var response = await http.post(Uri.parse(url),
       headers: {"Content-Type": "application/json"},
       body: body);
-  print(response.body);
   return response;
 }
 
